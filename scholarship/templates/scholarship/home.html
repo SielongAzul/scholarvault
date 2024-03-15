@@ -1,0 +1,24 @@
+{%include 'main.html' %}
+
+
+
+<div>
+
+    <div>
+            {% for scholarship in scholarship %}
+        <div>
+                <h5>
+
+                    {{ scholarship.scholarship_name }}
+                </h5>
+                <p>{{ scholarship.scholarship_provider_name }}</p>
+                <p>{{ scholarship.eligibility }}</p>
+                <p>{{ scholarship.requirements }}</p>
+
+        </div>
+
+            {% endfor %}
+    </div>
+</div>
+
+{%include 'footer.html' %}
